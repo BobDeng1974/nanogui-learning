@@ -1,0 +1,4 @@
+[Project]
+Name=nanoplayer
+Manager=KDevCMakeManager
+VersionControl=kdevgit

@@ -31,3 +31,6 @@
 [submodule "ext/gumbo-query"]
 	path = ext/gumbo-query
 	url = https://github.com/lazytiger/gumbo-query.git
+[submodule "ext/easylogginpp"]
+	path = ext/easylogginpp
+	url = https://github.com/easylogging/easyloggingpp.git

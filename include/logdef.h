@@ -1,7 +1,7 @@
 #ifndef LOGDEFS_H
 #define LOGDEFS_H
 #include <stdio.h>
-#ifdef DEBUG
+#if 1 //def DEBUG
 	#define LOGD(fmt, args...) do{printf("%s (%4d) DEBUG: ", __FILE__, __LINE__);printf(fmt, ##args);printf("\n");}while(0) 
 	#define LOGI(fmt, args...) do{printf("%s (%4d) INFO: ", __FILE__, __LINE__);printf(fmt, ##args);printf("\n");}while(0) 
 	#define LOGW(fmt, args...) do{printf("%s (%4d) WARN: ", __FILE__, __LINE__);printf(fmt, ##args);printf("\n");}while(0) 

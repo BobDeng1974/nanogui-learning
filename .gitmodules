@@ -4,21 +4,6 @@
 [submodule "ext/cpr"]
 	path = ext/cpr
 	url = https://github.com/whoshuu/cpr.git
-[submodule "easyloggingpp"]
-	path = easyloggingpp
-	url = https://github.com/easylogging/easyloggingpp.git
-[submodule "tinyxml2"]
-	path = tinyxml2
-	url = https://github.com/leethomason/tinyxml2.git
-[submodule "gumbo-query"]
-	path = gumbo-query
-	url = https://github.com/lazytiger/gumbo-query.git
-[submodule "gumbo-parser"]
-	path = gumbo-parser
-	url = https://github.com/google/gumbo-parser.git
-[submodule "json"]
-	path = json
-	url = https://github.com/nlohmann/json.git
 [submodule "ext/aeon_streams"]
 	path = ext/aeon_streams
 	url = https://github.com/alenstar/aeon_streams.git
@@ -37,3 +22,9 @@
 [submodule "ext/json"]
 	path = ext/json
 	url = https://github.com/nlohmann/json.git
+[submodule "ext/libyuv"]
+	path = ext/libyuv
+	url = https://chromium.googlesource.com/external/libyuv
+[submodule "ext/uws"]
+	path = ext/uws
+	url = git@github.com:uWebSockets/uWebSockets.git

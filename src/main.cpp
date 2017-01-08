@@ -51,6 +51,8 @@
 #  include <windows.h>
 #endif
 
+#include <logdef.h>
+#include "dict/youdao.h"
 
 using std::cout;
 using std::cerr;
@@ -160,7 +162,18 @@ public:
         textbox->setEditable(true);
 
         Button *b = new Button(window, "Plain button");
-        b->setCallback([] { cout << "pushed!" << endl; });
+        b->setCallback([textbox] {
+            cout << "pushed!" << endl;
+            cout << textbox->value() << endl;
+            YoudaoDict dict("http://dict.youdao.com/search");
+            auto res = dict.query(textbox->value(), 1);
+            for (int i = res->size(); i > 0; i--)
+            {
+                LOGD("%s: %s", res->at(i - 1).session.c_str(), res->at(i - 1).value.c_str());
+                printf("%s: %s\n", res->at(i - 1).session.c_str(),
+                res->at(i - 1).value.c_str());
+            }
+        });
         b->setTooltip("short tooltip");
 
         /* Alternative construction notation using variadic template */

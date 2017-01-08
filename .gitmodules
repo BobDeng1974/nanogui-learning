@@ -34,3 +34,6 @@
 [submodule "ext/easylogginpp"]
 	path = ext/easylogginpp
 	url = https://github.com/easylogging/easyloggingpp.git
+[submodule "ext/json"]
+	path = ext/json
+	url = https://github.com/nlohmann/json.git
